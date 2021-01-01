@@ -20,6 +20,7 @@
 
 #define LGDT_MAX_SEGMENT_SZ 8192
 
+#pragma pack(1)
 
 //段描述符的格式
 typedef struct segment_desc{
@@ -41,7 +42,7 @@ typedef struct segment_desc{
 typedef struct lgdt{
 	int base;
 	short limit;
-} ldgt_t __attribute__ ((packed));
+} lgdt_t;
 
 typedef struct selector{
 	short rpl:2;
@@ -52,7 +53,7 @@ typedef struct selector{
 //lgdt第一个元素为空,不使用
 //定义一个代码段一个数据段
 segment_desc_t seg[LGDT_MAX_SEGMENT_SZ] = {
-	{0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+	{0,0,0,0,0,0,0,0,0,0,0,0,0},
 	{0x0fff,0,0,SEG_DESC_NOSYS_TYPE_CODE_X,1,0,1,0xf,1,0,1,1,0},
 	{0x0fff,0,0,SEG_DESC_NOSYS_TYPE_DATA_W,1,0,1,0xf,1,0,1,1,0}
 };
@@ -65,7 +66,7 @@ void flush_csseg(selector_t selector); //刷新段寄存器
 
 void start(){
 	//初始化gdt
-	lgdt_t gdt = {seg,24};
+	lgdt_t gdt = {(int)&seg,24};
 	//初始化选择子
 	selector_t selector_cs={0,0,1};
 	selector_t selector_ds={0,0,2};
@@ -90,15 +91,16 @@ void switchon_protection_mode(){
 	asm volatile ("\
 			movl %%cr0,%%eax; 		\
 			or $0x00000001,%%eax;	\
-			movl %%eax,%%cr0;":::"eax","cr0");
+			movl %%eax,%%cr0;":::"eax");
 }
 
-void load_gdt(int gdt){
+void load_gdt(lgdt_t gdt){
 	asm volatile ("lgdt %0"::"m"(gdt):);
 }
 
 void flush_csseg(selector_t selector){
 	asm volatile (" \
-		jmp %0:flush_CS_segment; \
-		flush_CS_segment:"::"m"(selector):);
+        movw %%cs,%%ax; \
+		jmp flush_CS_segment; \
+		flush_CS_segment:"::"a"(selector):);
 }
