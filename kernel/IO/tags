@@ -1,0 +1,69 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AR	../../Makefile	/^AR=$(CROSS_COMPILER)-ar$/;"	m
+CC	../../Makefile	/^CC=$(CROSS_COMPILER)-gcc$/;"	m
+CFLAGS	../../Makefile	/^CFLAGS=-m32 -I.\/include\/kernel\/ -I.\/include\/bootsec\/$/;"	m
+CONSOLE_VGA_IO_H	../../kernel/include/UI/console_vga_io.h	2;"	d
+CROSS_COMPILER	../../Makefile	/^CROSS_COMPILER=\/usr\/local\/i386elfgcc\/bin\/i386-elf$/;"	m
+FILE_DEV	../../kernel/include/IO/file_operations.h	9;"	d
+FILE_H	../../kernel/include/IO/file.h	2;"	d
+FILE_NONE	../../kernel/include/IO/file_operations.h	6;"	d
+FILE_OPERATIONS_H	../../kernel/include/IO/file_operations.h	2;"	d
+FILE_VGA	../../kernel/include/IO/file_operations.h	7;"	d
+LD	../../Makefile	/^LD=$(CROSS_COMPILER)-ld$/;"	m
+MAX_FILE_OPEN	../../kernel/include/IO/file.h	6;"	d
+MAX_REG_FILEOPT	../../kernel/IO/file_operations.c	3;"	d	file:
+SELECTOR_CODE	../../mbr/mbr.asm	/^SELECTOR_CODE equ 0x0008$/;"	d
+TYPE_H	../../kernel/include/type.h	2;"	d
+VGA_RAM	../../kernel/UI/console/vga_io.c	3;"	d	file:
+call	../../mbr/mbr.asm	/^call .readdisk$/;"	l
+call	../../mbr/mbr.asm	/^call .set_protect$/;"	l
+close	../../kernel/include/IO/file_operations.h	/^    f_close close;$/;"	m	struct:file_operations
+db	../../mbr/mbr.asm	/^db 0x55,0xaa$/;"	l
+f_close	../../kernel/include/IO/file_operations.h	/^typedef void (*f_close)(uint32_t );$/;"	t
+f_open	../../kernel/include/IO/file_operations.h	/^typedef uint32_t (*f_open)(int8_t* fpath);$/;"	t
+f_read	../../kernel/include/IO/file_operations.h	/^typedef uint32_t (*f_read)(int8_t* buffer,int rsize);$/;"	t
+f_seek	../../kernel/include/IO/file_operations.h	/^typedef uint32_t (*f_seek)(int off);$/;"	t
+f_setup	../../kernel/include/IO/file_operations.h	/^typedef uint32_t (*f_setup)(int opt,uint8_t* buffer);$/;"	t
+f_write	../../kernel/include/IO/file_operations.h	/^typedef uint32_t (*f_write)(int8_t* buffer,int wsize);$/;"	t
+file	../../kernel/include/IO/file.h	/^struct file {$/;"	s
+file_op	../../kernel/include/IO/file.h	/^    struct file_operations *file_op;$/;"	m	struct:file	typeref:struct:file::file_operations
+file_operations	../../kernel/include/IO/file_operations.h	/^struct file_operations{$/;"	s
+files	../../kernel/IO/file.c	/^struct file files[MAX_FILE_OPEN];$/;"	v	typeref:struct:file
+find_filedesc_i	../../kernel/IO/file.c	/^static int32_t find_filedesc_i(){$/;"	f	file:
+find_fileoperations	../../kernel/IO/file_operations.c	/^struct file_operations* find_fileoperations(uint32_t filetype){$/;"	f
+ftype	../../kernel/include/IO/file.h	/^    uint32_t ftype;$/;"	m	struct:file
+int16_t	../../kernel/include/type.h	15;"	d
+int32_t	../../kernel/include/type.h	8;"	d
+int64_t	../../kernel/include/type.h	5;"	d
+int8_t	../../kernel/include/type.h	13;"	d
+jmp	../../mbr/mbr.asm	/^jmp dword SELECTOR_CODE:0x10000$/;"	l
+kernel_obj	../../Makefile	/^kernel_obj=.\/kernel\/bootinit\/bootsec.o \\$/;"	m
+kernel_target	../../Makefile	/^kernel_target=kernel.bin$/;"	m
+mbr_file	../../Makefile	/^mbr_file=.\/mbr\/mbr.asm$/;"	m
+mbr_target	../../Makefile	/^mbr_target=mbr.bin$/;"	m
+mov	../../mbr/mbr.asm	/^mov eax,0x10000$/;"	l
+open	../../kernel/IO/file.c	/^int32_t open(int8_t* fpath){$/;"	f
+open	../../kernel/include/IO/file_operations.h	/^    f_open open;$/;"	m	struct:file_operations
+opt	../../kernel/IO/file_operations.c	/^    struct file_operations* opt;$/;"	m	struct:reg_file_operations	typeref:struct:reg_file_operations::file_operations	file:
+read	../../kernel/IO/file.c	/^int32_t read(uint32_t fd,int8_t* buffer,uint32_t rsize){$/;"	f
+read	../../kernel/include/IO/file_operations.h	/^    f_read read;$/;"	m	struct:file_operations
+reg_file_operations	../../kernel/IO/file_operations.c	/^struct reg_file_operations{$/;"	s	file:
+reg_filetype	../../kernel/IO/file_operations.c	/^struct reg_file_operations reg_filetype[MAX_REG_FILEOPT];$/;"	v	typeref:struct:reg_file_operations
+reg_top	../../kernel/IO/file_operations.c	/^static uint8_t reg_top = 0;$/;"	v	file:
+reg_type	../../kernel/IO/file_operations.c	/^    uint32_t reg_type;$/;"	m	struct:reg_file_operations	file:
+register_fileoperations	../../kernel/IO/file_operations.c	/^void register_fileoperations(uint32_t filetype,struct file_operations* fop){$/;"	f
+section	../../mbr/mbr.asm	/^section .code vstart=0x7c00$/;"	l
+seek	../../kernel/include/IO/file_operations.h	/^    f_seek seek;$/;"	m	struct:file_operations
+setup	../../kernel/include/IO/file_operations.h	/^    f_setup setup;$/;"	m	struct:file_operations
+times	../../mbr/mbr.asm	/^times 510-($-$$) db 0$/;"	l
+uint16_t	../../kernel/include/type.h	14;"	d
+uint32_t	../../kernel/include/type.h	9;"	d
+uint64_t	../../kernel/include/type.h	6;"	d
+uint8_t	../../kernel/include/type.h	12;"	d
+unregister_fileoperations	../../kernel/IO/file_operations.c	/^void unregister_fileoperations(uint32_t filetype){$/;"	f
+write	../../kernel/include/IO/file_operations.h	/^    f_write write;$/;"	m	struct:file_operations
