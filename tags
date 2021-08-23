@@ -3,105 +3,100 @@
 !_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
-!_TAG_PROGRAM_VERSION	5.8	//
-EXPAND_NAME	include/kernel/common/baseIO.h	9;"	d
-LGDT_MAX_SEGMENT_SZ	include/bootsec/desctable.h	24;"	d
-PAGE_TABLE_ENTRY_SIZE	include/bootsec/page.h	23;"	d
-PAGE_TABLE_SIZE	include/bootsec/page.h	21;"	d
-PAGE_USR_RATE	include/bootsec/page.h	25;"	d
-SEG_DESC_NOSYS_TYPE_CODE_A	include/bootsec/desctable.h	18;"	d
-SEG_DESC_NOSYS_TYPE_CODE_C	include/bootsec/desctable.h	17;"	d
-SEG_DESC_NOSYS_TYPE_CODE_R	include/bootsec/desctable.h	16;"	d
-SEG_DESC_NOSYS_TYPE_CODE_X	include/bootsec/desctable.h	15;"	d
-SEG_DESC_NOSYS_TYPE_DATA_A	include/bootsec/desctable.h	22;"	d
-SEG_DESC_NOSYS_TYPE_DATA_E	include/bootsec/desctable.h	21;"	d
-SEG_DESC_NOSYS_TYPE_DATA_W	include/bootsec/desctable.h	20;"	d
-SEG_DESC_NOSYS_TYPE_DATA_X	include/bootsec/desctable.h	19;"	d
-SEG_DESC_SYS_TYPE_286_GATE_CALL	include/bootsec/desctable.h	6;"	d
-SEG_DESC_SYS_TYPE_286_GATE_INTR	include/bootsec/desctable.h	8;"	d
-SEG_DESC_SYS_TYPE_286_GATE_TRAP	include/bootsec/desctable.h	9;"	d
-SEG_DESC_SYS_TYPE_286_TSS_AVLI	include/bootsec/desctable.h	4;"	d
-SEG_DESC_SYS_TYPE_286_TSS_BUSY	include/bootsec/desctable.h	5;"	d
-SEG_DESC_SYS_TYPE_386_GATE_CALL	include/bootsec/desctable.h	12;"	d
-SEG_DESC_SYS_TYPE_386_TSS_AVLI	include/bootsec/desctable.h	10;"	d
-SEG_DESC_SYS_TYPE_386_TSS_BUSY	include/bootsec/desctable.h	11;"	d
-SEG_DESC_SYS_TYPE_GATE_TASK	include/bootsec/desctable.h	7;"	d
-SEG_DESC_SYS_TYPE_INTR	include/bootsec/desctable.h	13;"	d
-SEG_DESC_SYS_TYPE_TRAP	include/bootsec/desctable.h	14;"	d
-STR	include/kernel/common/baseIO.h	7;"	d
-_KERNEL_DEBUG_H_	include/kernel/common/print.h	2;"	d
-_STR	include/kernel/common/baseIO.h	6;"	d
-__BOOTSEC_PAGE_H__	include/bootsec/page.h	2;"	d
-__DESC_TABLE_H__	include/bootsec/desctable.h	2;"	d
-__KERNEL_BASE_IO_H__	include/kernel/common/baseIO.h	2;"	d
-__KERNEL_TYPE_H__	include/kernel/common/type.h	2;"	d
-a	include/bootsec/page.h	/^    in32_t a:1; \/\/由CPU设置,表示是否被CPU访问过了$/;"	m	struct:page_entry
-avl	include/bootsec/desctable.h	/^	uin32_t avl:1;$/;"	m	struct:segment_desc
-avl	include/bootsec/page.h	/^    in32_t avl:3;\/\/后续的操作系统会用该位$/;"	m	struct:page_entry
-base	include/bootsec/desctable.h	/^	uin32_t base;$/;"	m	struct:lgdt
-base	include/bootsec/page.h	/^    in32_t base:20;$/;"	m	struct:page_entry
-base_h8	include/bootsec/desctable.h	/^	uin32_t base_h8:8;$/;"	m	struct:segment_desc
-base_l16	include/bootsec/desctable.h	/^	uin16_t base_l16;$/;"	m	struct:segment_desc
-base_m8	include/bootsec/desctable.h	/^	uin32_t base_m8:8;$/;"	m	struct:segment_desc
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AR	Makefile	/^AR=$(CROSS_COMPILER)-ar$/;"	m
+CC	Makefile	/^CC=$(CROSS_COMPILER)-gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS=-m32 -I.\/include\/kernel\/ -I.\/include\/bootsec\/$/;"	m
+COLOR_BLACK	kernel/include/UI/console_vga_io.h	11;"	d
+COLOR_BLUE	kernel/include/UI/console_vga_io.h	10;"	d
+COLOR_GREEN	kernel/include/UI/console_vga_io.h	9;"	d
+COLOR_I	kernel/include/UI/console_vga_io.h	7;"	d
+COLOR_K	kernel/include/UI/console_vga_io.h	5;"	d
+COLOR_RED	kernel/include/UI/console_vga_io.h	8;"	d
+COLOR_WHITE	kernel/include/UI/console_vga_io.h	12;"	d
+CONSOLE_VGA_IO_H	kernel/include/UI/console_vga_io.h	2;"	d
+CROSS_COMPILER	Makefile	/^CROSS_COMPILER=\/usr\/local\/i386elfgcc\/bin\/i386-elf$/;"	m
+FILEOPT_VGA_SETUPCOLOR	kernel/include/UI/console_vga_io.h	14;"	d
+FILE_DEV	kernel/include/IO/file_operations.h	9;"	d
+FILE_H	kernel/include/IO/file.h	2;"	d
+FILE_NONE	kernel/include/IO/file_operations.h	6;"	d
+FILE_OPERATIONS_H	kernel/include/IO/file_operations.h	2;"	d
+FILE_VGA	kernel/include/IO/file_operations.h	7;"	d
+LD	Makefile	/^LD=$(CROSS_COMPILER)-ld$/;"	m
+MAX_FILE_OPEN	kernel/include/IO/file.h	6;"	d
+MAX_REG_FILEOPT	kernel/IO/file_operations.c	3;"	d	file:
+SELECTOR_CODE	mbr/mbr.asm	/^SELECTOR_CODE equ 0x0008$/;"	d
+TYPE_H	kernel/include/type.h	2;"	d
+VGA_BASIC_IO_H	kernel/include/UI/vga_basic_io.h	2;"	d
+VGA_IO_EACHLINE	kernel/UI/console/vga_io.c	7;"	d	file:
+VGA_RAM_BUFFER	kernel/UI/console/vga_io.c	5;"	d	file:
+VGA_RAM_END	kernel/UI/console/vga_io.c	4;"	d	file:
+VGA_RAM_START	kernel/UI/console/vga_io.c	3;"	d	file:
+ascii	kernel/UI/console/vga_io.c	/^    uint8_t ascii;$/;"	m	struct:console_vga	file:
+bg_color	kernel/UI/console/vga_io.c	/^    uint8_t bg_color:4;$/;"	m	struct:console_vga	file:
+bg_color	kernel/UI/console/vga_io.c	/^    uint8_t bg_color:4;$/;"	m	struct:console_vga_config	file:
 call	mbr/mbr.asm	/^call .readdisk$/;"	l
-call	mbr/mbr.asm	/^call ax$/;"	l
-d	include/bootsec/page.h	/^    in32_t d:1;$/;"	m	struct:page_entry
-db	include/bootsec/desctable.h	/^	uin32_t db:1;$/;"	m	struct:segment_desc
+call	mbr/mbr.asm	/^call .set_protect$/;"	l
+close	kernel/IO/file.c	/^void close(uint32_t fd){$/;"	f
+close	kernel/include/IO/file_operations.h	/^    f_close close;$/;"	m	struct:file_operations
+console_vga	kernel/UI/console/vga_io.c	/^struct console_vga {$/;"	s	file:
+console_vga_config	kernel/UI/console/vga_io.c	/^struct console_vga_config {$/;"	s	file:
+curpos	kernel/UI/console/vga_io.c	/^    uint32_t curpos;$/;"	m	struct:console_vga_config	file:
 db	mbr/mbr.asm	/^db 0x55,0xaa$/;"	l
-dpl	include/bootsec/desctable.h	/^	uin32_t dpl:2;$/;"	m	struct:segment_desc
-flush_csseg	include/bootsec/desctable.h	/^void flush_csseg(selector_t selector){$/;"	f
-g	include/bootsec/desctable.h	/^	uin32_t g:1;$/;"	m	struct:segment_desc
-g	include/bootsec/page.h	/^    in32_t g:1; \/\/表示是否存在于tlb缓存中,后面会根据情况设置该位$/;"	m	struct:page_entry
-in	include/kernel/common/baseIO.h	11;"	d
-inb	include/kernel/common/baseIO.h	/^void inb(uint32_t port,uint8_t value) { in(port,value,b); }$/;"	f
-index	include/bootsec/desctable.h	/^	int16_t index:13;$/;"	m	struct:selector
-init_page_entry	include/bootsec/page.h	/^void init_page_entry(){$/;"	f
-inl	include/kernel/common/baseIO.h	/^void inl(uint32_t port,uint32_t value) { in(port,value,l); }$/;"	f
-int16_t	include/kernel/common/type.h	7;"	d
-int32_t	include/kernel/common/type.h	9;"	d
-int8_t	include/kernel/common/type.h	5;"	d
-inw	include/kernel/common/baseIO.h	/^void inw(uint32_t port,uint16_t value) { in(port,value,w); }$/;"	f
-kprint	kernel/common/print.c	/^void kprint(int8_t * str){$/;"	f
-kprint_char	kernel/common/print.c	/^static void kprint_char(int8_t ch){$/;"	f	file:
-l	include/bootsec/desctable.h	/^	uin32_t l:1;$/;"	m	struct:segment_desc
-lgdt	include/bootsec/desctable.h	/^typedef struct lgdt{$/;"	s
-lgdt_t	include/bootsec/desctable.h	/^} lgdt_t;$/;"	t	typeref:struct:lgdt
-limit	include/bootsec/desctable.h	/^	uin16_t limit;$/;"	m	struct:lgdt
-limit_h20	include/bootsec/desctable.h	/^	uin32_t limit_h20:4;$/;"	m	struct:segment_desc
-limit_l16	include/bootsec/desctable.h	/^	uin16_t limit_l16;$/;"	m	struct:segment_desc
-load_gdt	include/bootsec/desctable.h	/^void load_gdt(lgdt_t gdt){$/;"	f
-mov	mbr/mbr.asm	/^mov ax,0x900$/;"	l
-out	include/kernel/common/baseIO.h	14;"	d
-outb	include/kernel/common/baseIO.h	/^void outb(uint32_t port,uint8_t* value) { out(port,value,b); }$/;"	f
-outl	include/kernel/common/baseIO.h	/^void outl(uint32_t port,uint32_t* value) { out(port,value,l); }$/;"	f
-outw	include/kernel/common/baseIO.h	/^void outw(uint32_t port,uint16_t* value) { out(port,value,w); }$/;"	f
-p	include/bootsec/desctable.h	/^	uin32_t p:1;$/;"	m	struct:segment_desc
-p	include/bootsec/page.h	/^    in32_t p:1;$/;"	m	struct:page_entry
-page_entry	include/bootsec/page.h	/^page_entry_t page_entry[PAGE_TABLE_SIZE][PAGE_TABLE_ENTRY_SIZE];$/;"	v
-page_entry	include/bootsec/page.h	/^typedef struct page_entry {$/;"	s
-page_entry_t	include/bootsec/page.h	/^} page_entry_t;$/;"	t	typeref:struct:page_entry
-page_switch_on	include/bootsec/page.h	/^in32_t page_switch_on(){$/;"	f
-page_table_l1	include/bootsec/page.h	/^page_entry_t page_table_l1[PAGE_TABLE_SIZE];$/;"	v
-pat	include/bootsec/page.h	/^    in32_t pat:1;$/;"	m	struct:page_entry
-pcd	include/bootsec/page.h	/^    in32_t pcd:1; \/\/高速缓存用$/;"	m	struct:page_entry
-pwt	include/bootsec/page.h	/^    in32_t pwt:1; $/;"	m	struct:page_entry
-rpl	include/bootsec/desctable.h	/^	int16_t rpl:2;$/;"	m	struct:selector
-rw	include/bootsec/page.h	/^    in32_t rw:1;$/;"	m	struct:page_entry
-s	include/bootsec/desctable.h	/^	uin32_t s:1;$/;"	m	struct:segment_desc
+f_close	kernel/include/IO/file_operations.h	/^typedef void (*f_close)(uint32_t );$/;"	t
+f_open	kernel/include/IO/file_operations.h	/^typedef uint32_t (*f_open)(int8_t* fpath);$/;"	t
+f_read	kernel/include/IO/file_operations.h	/^typedef uint32_t (*f_read)(int8_t* buffer,int rsize);$/;"	t
+f_seek	kernel/include/IO/file_operations.h	/^typedef uint32_t (*f_seek)(uint32_t off);$/;"	t
+f_setup	kernel/include/IO/file_operations.h	/^typedef uint32_t (*f_setup)(uint32_t opt,uint8_t* buffer);$/;"	t
+f_write	kernel/include/IO/file_operations.h	/^typedef uint32_t (*f_write)(int8_t* buffer,int wsize);$/;"	t
+file	kernel/include/IO/file.h	/^struct file {$/;"	s
+file_op	kernel/include/IO/file.h	/^    struct file_operations *file_op;$/;"	m	struct:file	typeref:struct:file::file_operations
+file_operations	kernel/include/IO/file_operations.h	/^struct file_operations{$/;"	s
+fileoperations_init	kernel/IO/file_operations.c	/^void fileoperations_init(void){$/;"	f
+files	kernel/IO/file.c	/^static struct file files[MAX_FILE_OPEN];$/;"	v	typeref:struct:file	file:
+filesetup	kernel/IO/file.c	/^int32_t filesetup(uint32_t fd,uint32_t opt,int8_t* buffer){$/;"	f
+find_filedesc_i	kernel/IO/file.c	/^static int32_t find_filedesc_i(){$/;"	f	file:
+find_fileoperations	kernel/IO/file_operations.c	/^struct file_operations* find_fileoperations(uint32_t filetype){$/;"	f
+ftype	kernel/include/IO/file.h	/^    uint32_t ftype;$/;"	m	struct:file
+int16_t	kernel/include/type.h	15;"	d
+int32_t	kernel/include/type.h	8;"	d
+int64_t	kernel/include/type.h	5;"	d
+int8_t	kernel/include/type.h	13;"	d
+jmp	mbr/mbr.asm	/^jmp dword SELECTOR_CODE:0x10000$/;"	l
+kernel_obj	Makefile	/^kernel_obj=.\/kernel\/bootinit\/bootsec.o \\$/;"	m
+kernel_target	Makefile	/^kernel_target=kernel.bin$/;"	m
+mbr_file	Makefile	/^mbr_file=.\/mbr\/mbr.asm$/;"	m
+mbr_target	Makefile	/^mbr_target=mbr.bin$/;"	m
+mov	mbr/mbr.asm	/^mov eax,0x10000$/;"	l
+open	kernel/IO/file.c	/^int32_t open(int8_t* fpath){$/;"	f
+open	kernel/include/IO/file_operations.h	/^    f_open open;$/;"	m	struct:file_operations
+opt	kernel/IO/file_operations.c	/^    struct file_operations* opt;$/;"	m	struct:reg_file_operations	typeref:struct:reg_file_operations::file_operations	file:
+pg_color	kernel/UI/console/vga_io.c	/^    uint8_t pg_color:4;$/;"	m	struct:console_vga	file:
+pg_color	kernel/UI/console/vga_io.c	/^    uint8_t pg_color:4;$/;"	m	struct:console_vga_config	file:
+printf	kernel/UI/console/vga_basic_io.c	/^int32_t printf(const int8_t* fmt, ...){$/;"	f
+read	kernel/IO/file.c	/^int32_t read(uint32_t fd,int8_t* buffer,uint32_t rsize){$/;"	f
+read	kernel/include/IO/file_operations.h	/^    f_read read;$/;"	m	struct:file_operations
+reg_file_operations	kernel/IO/file_operations.c	/^struct reg_file_operations{$/;"	s	file:
+reg_filetype	kernel/IO/file_operations.c	/^struct reg_file_operations reg_filetype[MAX_REG_FILEOPT];$/;"	v	typeref:struct:reg_file_operations
+reg_top	kernel/IO/file_operations.c	/^static uint8_t reg_top = 0;$/;"	v	file:
+reg_type	kernel/IO/file_operations.c	/^    uint32_t reg_type;$/;"	m	struct:reg_file_operations	file:
+register_fileoperations	kernel/IO/file_operations.c	/^void register_fileoperations(uint32_t filetype,struct file_operations* fop){$/;"	f
 section	mbr/mbr.asm	/^section .code vstart=0x7c00$/;"	l
-seg	include/bootsec/desctable.h	/^segment_desc_t seg[LGDT_MAX_SEGMENT_SZ] = {$/;"	v
-segment_desc	include/bootsec/desctable.h	/^typedef struct segment_desc{$/;"	s
-segment_desc_t	include/bootsec/desctable.h	/^}segment_desc_t;$/;"	t	typeref:struct:segment_desc
-selector	include/bootsec/desctable.h	/^typedef struct selector{$/;"	s
-selector_t	include/bootsec/desctable.h	/^}__attribute__((packed)) selector_t;$/;"	t	typeref:struct:selector
-start	bootsec/bootsec.c	/^void start(){$/;"	f
-switchon_a20	include/bootsec/desctable.h	/^void switchon_a20(){$/;"	f
-switchon_protection_mode	include/bootsec/desctable.h	/^void switchon_protection_mode(){$/;"	f
-ti	include/bootsec/desctable.h	/^	int16_t ti:1;$/;"	m	struct:selector
+seek	kernel/IO/file.c	/^int32_t seek(uint32_t fd,uint32_t off){$/;"	f
+seek	kernel/include/IO/file_operations.h	/^    f_seek seek;$/;"	m	struct:file_operations
+setup	kernel/include/IO/file_operations.h	/^    f_setup setup;$/;"	m	struct:file_operations
 times	mbr/mbr.asm	/^times 510-($-$$) db 0$/;"	l
-type	include/bootsec/desctable.h	/^	uin32_t type:4;$/;"	m	struct:segment_desc
-uint16_t	include/kernel/common/type.h	6;"	d
-uint32_t	include/kernel/common/type.h	8;"	d
-uint8_t	include/kernel/common/type.h	4;"	d
-us	include/bootsec/page.h	/^    in32_t us:1;$/;"	m	struct:page_entry
-video_selector	kernel/common/print.c	/^segment_desc_t video_selector = {0,0,&seg[3]};$/;"	v
+uint16_t	kernel/include/type.h	14;"	d
+uint32_t	kernel/include/type.h	9;"	d
+uint64_t	kernel/include/type.h	6;"	d
+uint8_t	kernel/include/type.h	12;"	d
+unregister_fileoperations	kernel/IO/file_operations.c	/^void unregister_fileoperations(uint32_t filetype){$/;"	f
+vga_config	kernel/UI/console/vga_io.c	/^} vga_config = {COLOR_BLACK,COLOR_WHITE|COLOR_I,0};$/;"	v	typeref:struct:console_vga_config
+vga_foperation	kernel/UI/console/vga_io.c	/^struct file_operations vga_foperation = {$/;"	v	typeref:struct:file_operations
+vga_init	kernel/UI/console/vga_io.c	/^void vga_init(void){$/;"	f
+vga_seek	kernel/UI/console/vga_io.c	/^int32_t vga_seek(uint32_t off){$/;"	f
+vga_setup	kernel/UI/console/vga_io.c	/^int32_t vga_setup(uint32_opt,uint8_t* buffer){$/;"	f
+vga_write	kernel/UI/console/vga_io.c	/^int32_t vga_write(uint8_t *buffer, uint32_t nsize){$/;"	f
+vga_write_sigle	kernel/UI/console/vga_io.c	/^void vga_write_sigle(uint8_t ascii){$/;"	f
+write	kernel/IO/file.c	/^int32_t write(uint32_t fd,int8_t* buffer,uint32_t wsize){$/;"	f
+write	kernel/include/IO/file_operations.h	/^    f_write write;$/;"	m	struct:file_operations
