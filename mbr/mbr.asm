@@ -4,9 +4,9 @@ section .code vstart=0x7c00
 SELECTOR_CODE equ 0x0008
 
 call .set_protect
-mov eax,0x10000
+mov eax,0x9000
 call .readdisk
-jmp dword SELECTOR_CODE:0x10000
+jmp dword SELECTOR_CODE:0x9000
 
 .readdisk:
     push eax
