@@ -1,0 +1,134 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ADRS	../init/init.c	/^struct ADRS{$/;"	s	file:
+COLOR_BLACK	../include/UI/console_vga_io.h	11;"	d
+COLOR_BLUE	../include/UI/console_vga_io.h	10;"	d
+COLOR_GREEN	../include/UI/console_vga_io.h	9;"	d
+COLOR_I	../include/UI/console_vga_io.h	7;"	d
+COLOR_K	../include/UI/console_vga_io.h	5;"	d
+COLOR_RED	../include/UI/console_vga_io.h	8;"	d
+COLOR_WHITE	../include/UI/console_vga_io.h	12;"	d
+CONSOLE_VGA_IO_H	../include/UI/console_vga_io.h	2;"	d
+D_B	../include/init/gdt.h	/^	uint8_t D_B:1;$/;"	m	struct:desc_table
+FILEOPT_VGA_SETUPCOLOR	../include/UI/console_vga_io.h	14;"	d
+FILE_DEV	../include/IO/file_operations.h	9;"	d
+FILE_H	../include/IO/file.h	2;"	d
+FILE_NONE	../include/IO/file_operations.h	6;"	d
+FILE_OPERATIONS_H	../include/IO/file_operations.h	2;"	d
+FILE_VGA	../include/IO/file_operations.h	7;"	d
+G	../include/init/gdt.h	/^	uint8_t G:1;$/;"	m	struct:desc_table
+KERNEL_GDT_H	../include/init/gdt.h	2;"	d
+L	../include/init/gdt.h	/^	uint8_t L:1;$/;"	m	struct:desc_table
+MAX_FILE_OPEN	../include/IO/file.h	6;"	d
+MAX_REG_FILEOPT	../IO/file_operations.c	3;"	d	file:
+OS_STRING_H	../include/common/os_string.h	2;"	d
+P	../include/init/gdt.h	/^	uint8_t P:1;$/;"	m	struct:desc_table
+S	../include/init/gdt.h	/^	uint8_t S:1;$/;"	m	struct:desc_table
+TYPE_H	../include/type.h	2;"	d
+VGA_BASIC_IO_H	../include/UI/vga_basic_io.h	2;"	d
+VGA_IO_EACHLINE	../UI/console/vga_io.c	7;"	d	file:
+VGA_PRINTF_NORMAL	../UI/console/vga_basic_io.c	26;"	d	file:
+VGA_PRINTF_PERCENT	../UI/console/vga_basic_io.c	24;"	d	file:
+VGA_PRINTF_SLASH	../UI/console/vga_basic_io.c	25;"	d	file:
+VGA_RAM_BUFFER	../UI/console/vga_io.c	5;"	d	file:
+VGA_RAM_END	../UI/console/vga_io.c	4;"	d	file:
+VGA_RAM_START	../UI/console/vga_io.c	3;"	d	file:
+a20_open	../init/init.c	/^static void a20_open(void){$/;"	f	file:
+ascii	../UI/console/vga_io.c	/^    uint8_t ascii;$/;"	m	struct:console_vga	file:
+avl	../include/init/gdt.h	/^	uint8_t avl:1;$/;"	m	struct:desc_table
+bg_color	../UI/console/vga_io.c	/^    uint8_t bg_color:4;$/;"	m	struct:console_vga	file:
+bg_color	../UI/console/vga_io.c	/^    uint8_t bg_color:4;$/;"	m	struct:console_vga_config	file:
+close	../IO/file.c	/^void close(uint32_t fd){$/;"	f
+close	../include/IO/file_operations.h	/^    f_close close;$/;"	m	struct:file_operations
+console_vga	../UI/console/vga_io.c	/^struct console_vga {$/;"	s	file:
+console_vga_config	../UI/console/vga_io.c	/^struct console_vga_config {$/;"	s	file:
+cs_gdt	../include/init/gdt.h	/^struct desc_table cs_gdt = {$/;"	v	typeref:struct:desc_table
+cs_sel	../include/init/gdt.h	/^struct dt_selector cs_sel = {$/;"	v	typeref:struct:dt_selector
+curpos	../UI/console/vga_io.c	/^    uint32_t curpos;$/;"	m	struct:console_vga_config	file:
+desc_table	../include/init/gdt.h	/^struct desc_table {$/;"	s
+dpl	../include/init/gdt.h	/^	uint8_t dpl:2;$/;"	m	struct:desc_table
+ds_gdt	../include/init/gdt.h	/^struct desc_table ds_gdt = {$/;"	v	typeref:struct:desc_table
+ds_sel	../include/init/gdt.h	/^struct dt_selector ds_sel = {$/;"	v	typeref:struct:dt_selector
+dt_selector	../include/init/gdt.h	/^struct dt_selector{$/;"	s
+f_close	../include/IO/file_operations.h	/^typedef void (*f_close)(uint32_t );$/;"	t
+f_open	../include/IO/file_operations.h	/^typedef uint32_t (*f_open)(int8_t* fpath);$/;"	t
+f_read	../include/IO/file_operations.h	/^typedef uint32_t (*f_read)(int8_t* buffer,int rsize);$/;"	t
+f_seek	../include/IO/file_operations.h	/^typedef uint32_t (*f_seek)(uint32_t off);$/;"	t
+f_setup	../include/IO/file_operations.h	/^typedef uint32_t (*f_setup)(uint32_t opt,uint8_t* buffer);$/;"	t
+f_write	../include/IO/file_operations.h	/^typedef uint32_t (*f_write)(int8_t* buffer,int wsize);$/;"	t
+file	../include/IO/file.h	/^struct file {$/;"	s
+file_op	../include/IO/file.h	/^    struct file_operations *file_op;$/;"	m	struct:file	typeref:struct:file::file_operations
+file_operations	../include/IO/file_operations.h	/^struct file_operations{$/;"	s
+fileoperations_init	../IO/file_operations.c	/^void fileoperations_init(void){$/;"	f
+files	../IO/file.c	/^static struct file files[MAX_FILE_OPEN];$/;"	v	typeref:struct:file	file:
+filesetup	../IO/file.c	/^int32_t filesetup(uint32_t fd,uint32_t opt,int8_t* buffer){$/;"	f
+find_filedesc_i	../IO/file.c	/^static int32_t find_filedesc_i(){$/;"	f	file:
+find_fileoperations	../IO/file_operations.c	/^struct file_operations* find_fileoperations(uint32_t filetype){$/;"	f
+flush_executionflow	../init/gdt.c	/^void flush_executionflow(void){$/;"	f
+ftype	../include/IO/file.h	/^    uint32_t ftype;$/;"	m	struct:file
+gdt	../include/init/gdt.h	/^struct desc_table gdt[] = {$/;"	v	typeref:struct:desc_table
+gdt_addr	../include/init/gdt.h	/^	uint32_t gdt_addr;	\/\/gdt表地址$/;"	m	struct:gdt_reg
+gdt_reg	../include/init/gdt.h	/^struct gdt_reg{$/;"	s
+get_ADRS	../init/init.c	/^static void get_ADRS(struct ADRS* adrs){$/;"	f	file:
+index	../include/init/gdt.h	/^	uint16_t index:13;$/;"	m	struct:dt_selector
+init_gdt	../init/gdt.c	/^void init_gdt(void){$/;"	f
+int16_t	../include/type.h	15;"	d
+int32_t	../include/type.h	8;"	d
+int64_t	../include/type.h	5;"	d
+int8_t	../include/type.h	13;"	d
+kernel_mem	../init/init.c	/^struct kernel_mem{$/;"	s	file:
+kernel_mem_t	../init/init.c	/^} kernel_mem_t;$/;"	v	typeref:struct:kernel_mem
+kmem_all	../init/init.c	/^kernel_mem_t kmem_all = {0};$/;"	v
+limit	../include/init/gdt.h	/^	uint16_t limit; 	\/\/gdt界限$/;"	m	struct:gdt_reg
+m_below	../init/init.c	/^	uint16_t 15m_below;$/;"	m	struct:ADRS	file:
+m_under	../init/init.c	/^	uint16_t 15m_under;$/;"	m	struct:ADRS	file:
+memcpy	../common/os_string.c	/^uint32_t memcpy(int8_t* dst,int8_t* src,uint32_t len){$/;"	f
+open	../IO/file.c	/^int32_t open(int8_t* fpath){$/;"	f
+open	../include/IO/file_operations.h	/^    f_open open;$/;"	m	struct:file_operations
+opt	../IO/file_operations.c	/^    struct file_operations* opt;$/;"	m	struct:reg_file_operations	typeref:struct:reg_file_operations::file_operations	file:
+pe_setup	../init/init.c	/^static void pe_setup(void){$/;"	f	file:
+pg_color	../UI/console/vga_io.c	/^    uint8_t pg_color:4;$/;"	m	struct:console_vga	file:
+pg_color	../UI/console/vga_io.c	/^    uint8_t pg_color:4;$/;"	m	struct:console_vga_config	file:
+printf	../UI/console/vga_basic_io.c	/^int32_t printf(const int8_t* fmt, ...){$/;"	f
+protectmode_setup	../init/init.c	/^static void protectmode_setup(void){$/;"	f	file:
+read	../IO/file.c	/^int32_t read(uint32_t fd,int8_t* buffer,uint32_t rsize){$/;"	f
+read	../include/IO/file_operations.h	/^    f_read read;$/;"	m	struct:file_operations
+reg_file_operations	../IO/file_operations.c	/^struct reg_file_operations{$/;"	s	file:
+reg_filetype	../IO/file_operations.c	/^struct reg_file_operations reg_filetype[MAX_REG_FILEOPT];$/;"	v	typeref:struct:reg_file_operations
+reg_top	../IO/file_operations.c	/^static uint8_t reg_top = 0;$/;"	v	file:
+reg_type	../IO/file_operations.c	/^    uint32_t reg_type;$/;"	m	struct:reg_file_operations	file:
+register_fileoperations	../IO/file_operations.c	/^void register_fileoperations(uint32_t filetype,struct file_operations* fop){$/;"	f
+rpl	../include/init/gdt.h	/^	uint16_t rpl:2;$/;"	m	struct:dt_selector
+seek	../IO/file.c	/^int32_t seek(uint32_t fd,uint32_t off){$/;"	f
+seek	../include/IO/file_operations.h	/^    f_seek seek;$/;"	m	struct:file_operations
+seg_base_h	../include/init/gdt.h	/^	uint8_t seg_base_h;$/;"	m	struct:desc_table
+seg_base_l	../include/init/gdt.h	/^	uint16_t seg_base_l;$/;"	m	struct:desc_table
+seg_base_m_0	../include/init/gdt.h	/^	uint8_t seg_base_m_0:4;$/;"	m	struct:desc_table
+seg_base_m_1	../include/init/gdt.h	/^	uint8_t seg_base_m_1;$/;"	m	struct:desc_table
+seg_limit	../include/init/gdt.h	/^	uint16_t seg_limit;$/;"	m	struct:desc_table
+setup	../include/IO/file_operations.h	/^    f_setup setup;$/;"	m	struct:file_operations
+start	../init/init.c	/^void start(void){$/;"	f
+stdin	../include/UI/vga_basic_io.h	6;"	d
+stdout	../include/UI/vga_basic_io.h	7;"	d
+strlen	../common/os_string.c	/^int32_t strlen(int8_t* string){$/;"	f
+ti	../include/init/gdt.h	/^	uint16_t ti:1;$/;"	m	struct:dt_selector
+totalkb	../init/init.c	/^	uint32_t totalkb;$/;"	m	struct:kernel_mem	file:
+type	../include/init/gdt.h	/^	uint8_t type:4;$/;"	m	struct:desc_table
+uint16_t	../include/type.h	14;"	d
+uint32_t	../include/type.h	9;"	d
+uint64_t	../include/type.h	6;"	d
+uint8_t	../include/type.h	12;"	d
+unregister_fileoperations	../IO/file_operations.c	/^void unregister_fileoperations(uint32_t filetype){$/;"	f
+vga_config	../UI/console/vga_io.c	/^} vga_config = {COLOR_BLACK,COLOR_WHITE|COLOR_I,0};$/;"	v	typeref:struct:console_vga_config
+vga_foperation	../UI/console/vga_io.c	/^struct file_operations vga_foperation = {$/;"	v	typeref:struct:file_operations
+vga_init	../UI/console/vga_io.c	/^void vga_init(void){$/;"	f
+vga_seek	../UI/console/vga_io.c	/^int32_t vga_seek(uint32_t off){$/;"	f
+vga_setup	../UI/console/vga_io.c	/^int32_t vga_setup(uint32_opt,uint8_t* buffer){$/;"	f
+vga_write	../UI/console/vga_io.c	/^int32_t vga_write(uint8_t *buffer, uint32_t nsize){$/;"	f
+vga_write_sigle	../UI/console/vga_io.c	/^void vga_write_sigle(uint8_t ascii){$/;"	f
+write	../IO/file.c	/^int32_t write(uint32_t fd,int8_t* buffer,uint32_t wsize){$/;"	f
+write	../include/IO/file_operations.h	/^    f_write write;$/;"	m	struct:file_operations
