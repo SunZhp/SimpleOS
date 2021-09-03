@@ -1,6 +1,7 @@
 asm(".code16gcc\n");
 #include <type.h>
 #include <init/gdt.h>
+#include <init/page.h>
 #include <UI/vga_basic_io.h>
 
 //开启a20总线开关
@@ -36,8 +37,12 @@ void start(void){
 
 	get_ADRS(&adrs);
 	kmem_all.totalkb = adrs.15m_below + adrs.15m_under*64;
-	printf("kernel.tatoalkb = %d \n",kmem_all.tatoalkb);
+	printf("kernel.tatoalkb = %dKb \n",kmem_all.tatoalkb);
 
+    init_page_entry();
+
+    //开启分页后需要重新加载gdt
+	init_gdt();
 }
 
 static void a20_open(void){
