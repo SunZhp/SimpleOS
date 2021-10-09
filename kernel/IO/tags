@@ -1,0 +1,173 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ADDR	../../kernel/include/type.h	11;"	d
+ADDR	../../kernel/include/type.h	7;"	d
+ADRS	../../kernel/init/init.c	/^struct ADRS{$/;"	s	file:
+AR	../../Makefile	/^AR=$(CROSS_COMPILER)-ar$/;"	m
+CC	../../Makefile	/^CC=$(CROSS_COMPILER)-gcc$/;"	m
+CFLAGS	../../Makefile	/^CFLAGS=-m32 -I.\/include\/kernel\/ -I.\/include\/bootsec\/$/;"	m
+COLOR_BLACK	../../kernel/include/UI/console_vga_io.h	11;"	d
+COLOR_BLUE	../../kernel/include/UI/console_vga_io.h	10;"	d
+COLOR_GREEN	../../kernel/include/UI/console_vga_io.h	9;"	d
+COLOR_I	../../kernel/include/UI/console_vga_io.h	7;"	d
+COLOR_K	../../kernel/include/UI/console_vga_io.h	5;"	d
+COLOR_RED	../../kernel/include/UI/console_vga_io.h	8;"	d
+COLOR_WHITE	../../kernel/include/UI/console_vga_io.h	12;"	d
+CONSOLE_VGA_IO_H	../../kernel/include/UI/console_vga_io.h	2;"	d
+CROSS_COMPILER	../../Makefile	/^CROSS_COMPILER=\/usr\/local\/i386elfgcc\/bin\/i386-elf$/;"	m
+D_B	../../kernel/include/init/gdt.h	/^	uint8_t D_B:1;$/;"	m	struct:desc_table
+FILEOPT_VGA_SETUPCOLOR	../../kernel/include/UI/console_vga_io.h	14;"	d
+FILE_DEV	../../kernel/include/IO/file_operations.h	9;"	d
+FILE_H	../../kernel/include/IO/file.h	2;"	d
+FILE_NONE	../../kernel/include/IO/file_operations.h	6;"	d
+FILE_OPERATIONS_H	../../kernel/include/IO/file_operations.h	2;"	d
+FILE_VGA	../../kernel/include/IO/file_operations.h	7;"	d
+G	../../kernel/include/init/gdt.h	/^	uint8_t G:1;$/;"	m	struct:desc_table
+INTR	../../kernel/include/interupt/intr_init.h	4;"	d
+INTR_ADDR	../../kernel/include/interupt/intr_init.h	11;"	d
+INTR_INIT_H	../../kernel/include/interupt/intr_init.h	2;"	d
+KERNEL_GDT_H	../../kernel/include/init/gdt.h	2;"	d
+L	../../kernel/include/init/gdt.h	/^	uint8_t L:1;$/;"	m	struct:desc_table
+LD	../../Makefile	/^LD=$(CROSS_COMPILER)-ld$/;"	m
+LERNEL_PAGE_H	../../kernel/include/init/page.h	2;"	d
+MAX_FILE_OPEN	../../kernel/include/IO/file.h	6;"	d
+MAX_REG_FILEOPT	../../kernel/IO/file_operations.c	3;"	d	file:
+OS_STRING_H	../../kernel/include/common/os_string.h	2;"	d
+P	../../kernel/include/init/gdt.h	/^	uint8_t P:1;$/;"	m	struct:desc_table
+S	../../kernel/include/init/gdt.h	/^	uint8_t S:1;$/;"	m	struct:desc_table
+SELECTOR_CODE	../../mbr/mbr.asm	/^SELECTOR_CODE equ 0x0008$/;"	d
+TYPE_H	../../kernel/include/type.h	2;"	d
+VGA_BASIC_IO_H	../../kernel/include/UI/vga_basic_io.h	2;"	d
+VGA_IO_EACHLINE	../../kernel/UI/console/vga_io.c	7;"	d	file:
+VGA_PRINTF_NORMAL	../../kernel/UI/console/vga_basic_io.c	26;"	d	file:
+VGA_PRINTF_PERCENT	../../kernel/UI/console/vga_basic_io.c	24;"	d	file:
+VGA_PRINTF_SLASH	../../kernel/UI/console/vga_basic_io.c	25;"	d	file:
+VGA_RAM_BUFFER	../../kernel/UI/console/vga_io.c	5;"	d	file:
+VGA_RAM_END	../../kernel/UI/console/vga_io.c	4;"	d	file:
+VGA_RAM_START	../../kernel/UI/console/vga_io.c	3;"	d	file:
+a	../../kernel/include/init/page.h	/^    uint32_t a:1;       \/\/访问位$/;"	m	struct:page_entry
+a20_open	../../kernel/init/init.c	/^static void a20_open(void){$/;"	f	file:
+ascii	../../kernel/UI/console/vga_io.c	/^    uint8_t ascii;$/;"	m	struct:console_vga	file:
+avl	../../kernel/include/init/gdt.h	/^	uint8_t avl:1;$/;"	m	struct:desc_table
+avl	../../kernel/include/init/page.h	/^    uint32_t avl:1;     \/\/avalibale位$/;"	m	struct:page_entry
+base	../../kernel/include/init/page.h	/^    uint32_t base:20;   \/\/[页表]物理地址12-31位$/;"	m	struct:page_entry
+bg_color	../../kernel/UI/console/vga_io.c	/^    uint8_t bg_color:4;$/;"	m	struct:console_vga	file:
+bg_color	../../kernel/UI/console/vga_io.c	/^    uint8_t bg_color:4;$/;"	m	struct:console_vga_config	file:
+call	../../mbr/mbr.asm	/^call .readdisk$/;"	l
+call	../../mbr/mbr.asm	/^call .set_protect$/;"	l
+close	../../kernel/IO/file.c	/^void close(uint32_t fd){$/;"	f
+close	../../kernel/include/IO/file_operations.h	/^    f_close close;$/;"	m	struct:file_operations
+console_vga	../../kernel/UI/console/vga_io.c	/^struct console_vga {$/;"	s	file:
+console_vga_config	../../kernel/UI/console/vga_io.c	/^struct console_vga_config {$/;"	s	file:
+cs_gdt	../../kernel/include/init/gdt.h	/^struct desc_table cs_gdt = {$/;"	v	typeref:struct:desc_table
+cs_sel	../../kernel/include/init/gdt.h	/^struct dt_selector cs_sel = {$/;"	v	typeref:struct:dt_selector
+curpos	../../kernel/UI/console/vga_io.c	/^    uint32_t curpos;$/;"	m	struct:console_vga_config	file:
+d	../../kernel/include/init/page.h	/^    uint32_t d:1;       \/\/脏页位$/;"	m	struct:page_entry
+db	../../mbr/mbr.asm	/^db 0x55,0xaa$/;"	l
+desc_table	../../kernel/include/init/gdt.h	/^struct desc_table {$/;"	s
+dpl	../../kernel/include/init/gdt.h	/^	uint8_t dpl:2;$/;"	m	struct:desc_table
+ds_gdt	../../kernel/include/init/gdt.h	/^struct desc_table ds_gdt = {$/;"	v	typeref:struct:desc_table
+ds_sel	../../kernel/include/init/gdt.h	/^struct dt_selector ds_sel = {$/;"	v	typeref:struct:dt_selector
+dt_selector	../../kernel/include/init/gdt.h	/^struct dt_selector{$/;"	s
+f_close	../../kernel/include/IO/file_operations.h	/^typedef void (*f_close)(uint32_t );$/;"	t
+f_open	../../kernel/include/IO/file_operations.h	/^typedef uint32_t (*f_open)(int8_t* fpath);$/;"	t
+f_read	../../kernel/include/IO/file_operations.h	/^typedef uint32_t (*f_read)(int8_t* buffer,int rsize);$/;"	t
+f_seek	../../kernel/include/IO/file_operations.h	/^typedef uint32_t (*f_seek)(uint32_t off);$/;"	t
+f_setup	../../kernel/include/IO/file_operations.h	/^typedef uint32_t (*f_setup)(uint32_t opt,uint8_t* buffer);$/;"	t
+f_write	../../kernel/include/IO/file_operations.h	/^typedef uint32_t (*f_write)(int8_t* buffer,int wsize);$/;"	t
+file	../../kernel/include/IO/file.h	/^struct file {$/;"	s
+file_op	../../kernel/include/IO/file.h	/^    struct file_operations *file_op;$/;"	m	struct:file	typeref:struct:file::file_operations
+file_operations	../../kernel/include/IO/file_operations.h	/^struct file_operations{$/;"	s
+fileoperations_init	../../kernel/IO/file_operations.c	/^void fileoperations_init(void){$/;"	f
+files	../../kernel/IO/file.c	/^static struct file files[MAX_FILE_OPEN];$/;"	v	typeref:struct:file	file:
+filesetup	../../kernel/IO/file.c	/^int32_t filesetup(uint32_t fd,uint32_t opt,int8_t* buffer){$/;"	f
+find_filedesc_i	../../kernel/IO/file.c	/^static int32_t find_filedesc_i(){$/;"	f	file:
+find_fileoperations	../../kernel/IO/file_operations.c	/^struct file_operations* find_fileoperations(uint32_t filetype){$/;"	f
+flush_executionflow	../../kernel/init/gdt.c	/^void flush_executionflow(void){$/;"	f
+ftype	../../kernel/include/IO/file.h	/^    uint32_t ftype;$/;"	m	struct:file
+g	../../kernel/include/init/page.h	/^    uint32_t g:1;       \/\/全局位$/;"	m	struct:page_entry
+g_pde	../../kernel/init/page.c	/^struct page_entry g_pde[1024] = {0};$/;"	v	typeref:struct:page_entry
+g_pte	../../kernel/init/page.c	/^struct page_entry g_pte[1024] = {0};$/;"	v	typeref:struct:page_entry
+gdt	../../kernel/include/init/gdt.h	/^struct desc_table gdt[] = {$/;"	v	typeref:struct:desc_table
+gdt_addr	../../kernel/include/init/gdt.h	/^	uint32_t gdt_addr;	\/\/gdt表地址$/;"	m	struct:gdt_reg
+gdt_reg	../../kernel/include/init/gdt.h	/^struct gdt_reg{$/;"	s
+get_ADRS	../../kernel/init/init.c	/^static void get_ADRS(struct ADRS* adrs){$/;"	f	file:
+index	../../kernel/include/init/gdt.h	/^	uint16_t index:13;$/;"	m	struct:dt_selector
+init_gdt	../../kernel/init/gdt.c	/^void init_gdt(void){$/;"	f
+init_page_entry	../../kernel/init/page.c	/^void init_page_entry(void){$/;"	f
+int16_t	../../kernel/include/type.h	17;"	d
+int32_t	../../kernel/include/type.h	9;"	d
+int64_t	../../kernel/include/type.h	5;"	d
+int8_t	../../kernel/include/type.h	15;"	d
+jmp	../../mbr/mbr.asm	/^jmp dword SELECTOR_CODE:0x9000$/;"	l
+kernel_mem	../../kernel/init/init.c	/^struct kernel_mem{$/;"	s	file:
+kernel_mem_t	../../kernel/init/init.c	/^} kernel_mem_t;$/;"	v	typeref:struct:kernel_mem
+kernel_obj	../../Makefile	/^kernel_obj=.\/kernel\/UI\/console\/vga_basic_io.o 	\\$/;"	m
+kernel_target	../../Makefile	/^kernel_target=kernel.bin$/;"	m
+kmem_all	../../kernel/init/init.c	/^kernel_mem_t kmem_all = {0};$/;"	v
+limit	../../kernel/include/init/gdt.h	/^	uint16_t limit; 	\/\/gdt界限$/;"	m	struct:gdt_reg
+load_page_setup	../../kernel/init/page.c	/^static void load_page_setup(void){$/;"	f	file:
+m_below	../../kernel/init/init.c	/^	uint16_t 15m_below;$/;"	m	struct:ADRS	file:
+m_under	../../kernel/init/init.c	/^	uint16_t 15m_under;$/;"	m	struct:ADRS	file:
+mbr_file	../../Makefile	/^mbr_file=.\/mbr\/mbr.asm$/;"	m
+mbr_target	../../Makefile	/^mbr_target=mbr.bin$/;"	m
+memcpy	../../kernel/common/os_string.c	/^uint32_t memcpy(int8_t* dst,int8_t* src,uint32_t len){$/;"	f
+mov	../../mbr/mbr.asm	/^mov eax,0x9000$/;"	l
+open	../../kernel/IO/file.c	/^int32_t open(int8_t* fpath){$/;"	f
+open	../../kernel/include/IO/file_operations.h	/^    f_open open;$/;"	m	struct:file_operations
+opt	../../kernel/IO/file_operations.c	/^    struct file_operations* opt;$/;"	m	struct:reg_file_operations	typeref:struct:reg_file_operations::file_operations	file:
+page_entry	../../kernel/include/init/page.h	/^struct page_entry{$/;"	s
+pat	../../kernel/include/init/page.h	/^    uint32_t pat:1;     \/\/页属性表位$/;"	m	struct:page_entry
+pcd	../../kernel/include/init/page.h	/^    uint32_t pcd:1;     \/\/页级高速缓存禁止位$/;"	m	struct:page_entry
+pe_setup	../../kernel/init/init.c	/^static void pe_setup(void){$/;"	f	file:
+pg_color	../../kernel/UI/console/vga_io.c	/^    uint8_t pg_color:4;$/;"	m	struct:console_vga	file:
+pg_color	../../kernel/UI/console/vga_io.c	/^    uint8_t pg_color:4;$/;"	m	struct:console_vga_config	file:
+present	../../kernel/include/init/page.h	/^    uint32_t present:1; \/\/存在位$/;"	m	struct:page_entry
+printf	../../kernel/UI/console/vga_basic_io.c	/^int32_t printf(const int8_t* fmt, ...){$/;"	f
+protectmode_setup	../../kernel/init/init.c	/^static void protectmode_setup(void){$/;"	f	file:
+pwt	../../kernel/include/init/page.h	/^    uint32_t pwt:1;     \/\/页级通写位$/;"	m	struct:page_entry
+read	../../kernel/IO/file.c	/^int32_t read(uint32_t fd,int8_t* buffer,uint32_t rsize){$/;"	f
+read	../../kernel/include/IO/file_operations.h	/^    f_read read;$/;"	m	struct:file_operations
+reg_file_operations	../../kernel/IO/file_operations.c	/^struct reg_file_operations{$/;"	s	file:
+reg_filetype	../../kernel/IO/file_operations.c	/^struct reg_file_operations reg_filetype[MAX_REG_FILEOPT];$/;"	v	typeref:struct:reg_file_operations
+reg_top	../../kernel/IO/file_operations.c	/^static uint8_t reg_top = 0;$/;"	v	file:
+reg_type	../../kernel/IO/file_operations.c	/^    uint32_t reg_type;$/;"	m	struct:reg_file_operations	file:
+register_fileoperations	../../kernel/IO/file_operations.c	/^void register_fileoperations(uint32_t filetype,struct file_operations* fop){$/;"	f
+rpl	../../kernel/include/init/gdt.h	/^	uint16_t rpl:2;$/;"	m	struct:dt_selector
+rw	../../kernel/include/init/page.h	/^    uint32_t rw:1;      \/\/读写位$/;"	m	struct:page_entry
+section	../../mbr/mbr.asm	/^section .code vstart=0x7c00$/;"	l
+seek	../../kernel/IO/file.c	/^int32_t seek(uint32_t fd,uint32_t off){$/;"	f
+seek	../../kernel/include/IO/file_operations.h	/^    f_seek seek;$/;"	m	struct:file_operations
+seg_base_h	../../kernel/include/init/gdt.h	/^	uint8_t seg_base_h;$/;"	m	struct:desc_table
+seg_base_l	../../kernel/include/init/gdt.h	/^	uint16_t seg_base_l;$/;"	m	struct:desc_table
+seg_base_m_0	../../kernel/include/init/gdt.h	/^	uint8_t seg_base_m_0:4;$/;"	m	struct:desc_table
+seg_base_m_1	../../kernel/include/init/gdt.h	/^	uint8_t seg_base_m_1;$/;"	m	struct:desc_table
+seg_limit	../../kernel/include/init/gdt.h	/^	uint16_t seg_limit;$/;"	m	struct:desc_table
+setup	../../kernel/include/IO/file_operations.h	/^    f_setup setup;$/;"	m	struct:file_operations
+start	../../kernel/init/init.c	/^void start(void){$/;"	f
+stdin	../../kernel/include/UI/vga_basic_io.h	6;"	d
+stdout	../../kernel/include/UI/vga_basic_io.h	7;"	d
+strlen	../../kernel/common/os_string.c	/^int32_t strlen(int8_t* string){$/;"	f
+ti	../../kernel/include/init/gdt.h	/^	uint16_t ti:1;$/;"	m	struct:dt_selector
+times	../../mbr/mbr.asm	/^times 510-($-$$) db 0$/;"	l
+totalkb	../../kernel/init/init.c	/^	uint32_t totalkb;$/;"	m	struct:kernel_mem	file:
+type	../../kernel/include/init/gdt.h	/^	uint8_t type:4;$/;"	m	struct:desc_table
+uint16_t	../../kernel/include/type.h	16;"	d
+uint32_t	../../kernel/include/type.h	10;"	d
+uint64_t	../../kernel/include/type.h	6;"	d
+uint8_t	../../kernel/include/type.h	14;"	d
+unregister_fileoperations	../../kernel/IO/file_operations.c	/^void unregister_fileoperations(uint32_t filetype){$/;"	f
+us	../../kernel/include/init/page.h	/^    uint32_t us:1;      \/\/普通用户or超级用户$/;"	m	struct:page_entry
+vga_config	../../kernel/UI/console/vga_io.c	/^} vga_config = {COLOR_BLACK,COLOR_WHITE|COLOR_I,0};$/;"	v	typeref:struct:console_vga_config
+vga_foperation	../../kernel/UI/console/vga_io.c	/^struct file_operations vga_foperation = {$/;"	v	typeref:struct:file_operations
+vga_init	../../kernel/UI/console/vga_io.c	/^void vga_init(void){$/;"	f
+vga_seek	../../kernel/UI/console/vga_io.c	/^int32_t vga_seek(uint32_t off){$/;"	f
+vga_setup	../../kernel/UI/console/vga_io.c	/^int32_t vga_setup(uint32_opt,uint8_t* buffer){$/;"	f
+vga_write	../../kernel/UI/console/vga_io.c	/^int32_t vga_write(uint8_t *buffer, uint32_t nsize){$/;"	f
+vga_write_sigle	../../kernel/UI/console/vga_io.c	/^void vga_write_sigle(uint8_t ascii){$/;"	f
+write	../../kernel/IO/file.c	/^int32_t write(uint32_t fd,int8_t* buffer,uint32_t wsize){$/;"	f
+write	../../kernel/include/IO/file_operations.h	/^    f_write write;$/;"	m	struct:file_operations

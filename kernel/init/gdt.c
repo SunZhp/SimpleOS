@@ -3,8 +3,6 @@
 void init_gdt(void){
 	struct gdt_reg gdtr = {0xff,(uint32_t)&gdt};
 	asm volatile ( "lgdt %0"::"=m"(gdtr):);
-
-	printf("init global descripte-table done...\n");
 }
 
 

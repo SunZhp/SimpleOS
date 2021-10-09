@@ -3,8 +3,8 @@
 
 #include "type.h"
 
-#define stdin 0
-#define stdout 1
+#define stdin 1
+#define stdout 0
 
 /*
  *功能类似于标准库提供的printf

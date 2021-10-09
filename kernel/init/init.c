@@ -3,6 +3,8 @@ asm(".code16gcc\n");
 #include <init/gdt.h>
 #include <init/page.h>
 #include <UI/vga_basic_io.h>
+#include <interupt/intr_init.h>
+
 
 //开启a20总线开关
 static void a20_open(void);
@@ -35,14 +37,20 @@ void start(void){
 	//刷新执行流同时进入到32位保护模式
 	flush_executionflow();
 
+	//初始化vga接口，同时创建stdout(0)文件描述符
+	fileoperations_init();
+
 	get_ADRS(&adrs);
 	kmem_all.totalkb = adrs.15m_below + adrs.15m_under*64;
-	printf("kernel.tatoalkb = %dKb \n",kmem_all.tatoalkb);
+	printf("kernel.totalkb = %dKb \n",kmem_all.totalkb);
 
     init_page_entry();
 
     //开启分页后需要重新加载gdt
 	init_gdt();
+
+	//idt初始化
+	init_idt();
 }
 
 static void a20_open(void){
@@ -64,7 +72,6 @@ static void pe_setup(void){
 static void protectmode_setup(void){
 	a20_open();
 	pe_setup();
-	printf("setup protect-mode done...\n");
 }
 
 static void get_ADRS(struct ADRS* adrs){

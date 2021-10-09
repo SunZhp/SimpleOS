@@ -16,7 +16,7 @@ struct page_entry{
     uint32_t g:1;       //全局位
     uint32_t avl:1;     //avalibale位
     uint32_t base:20;   //[页表]物理地址12-31位
-};
+} __attribute__ ((packed)) ;
 
 extern struct page_entry g_pde[1024];//页目录项
 extern struct page_entry g_pte[1024];//页表项
